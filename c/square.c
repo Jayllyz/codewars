@@ -7,8 +7,8 @@ bool is_square(int n) {
 
     int intValue;
     float floatValue;
-    floatValue=sqrt((double)n);
-    intValue=floatValue;
+    float Value=sqrt((double)n);
+    int Value=floatValue;
     
     return intValue==floatValue ? true : false;
 }
