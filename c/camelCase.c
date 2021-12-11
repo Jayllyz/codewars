@@ -5,18 +5,10 @@
 
 char* breakCamel(char* string){
     int len = strlen(string);
-    int k = 0;
-    int n=1;
-    while (k < len) {
-        if (string[k] >= 'A' && string[k] <= 'Z') {
-            n++;   
-        }
-        k++;
-    }
-    char* newString = (char *)malloc((len+n) * sizeof(char)); 
+    char* newString = (char *)malloc((len*2) * sizeof(char)); 
     int j=0;
     int i =0;
-    for(i=0; i<len+n; i++) {
+    for(i=0; i<len*2; i++) {
         if(string[j] >= 'A' && string[j] <= 'Z') {
             newString[i] = ' ';
             i++;
@@ -27,7 +19,6 @@ char* breakCamel(char* string){
         }
        j++;
     }   
-    
     return newString;
 }
 
