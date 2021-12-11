@@ -6,9 +6,7 @@
 char* breakCamel(char* string){
     int len = strlen(string);
     char* newString = (char *)malloc((len*2) * sizeof(char)); 
-    int j=0;
-    int i =0;
-    for(i=0; i<len*2; i++) {
+    for(int i=0, j=0; i<len*2; i++ , j++) {
         if(string[j] >= 'A' && string[j] <= 'Z') {
             newString[i] = ' ';
             i++;
@@ -17,7 +15,6 @@ char* breakCamel(char* string){
         else {
             newString[i] = string[j];    
         }
-       j++;
     }   
     return newString;
 }
