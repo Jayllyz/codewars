@@ -19,3 +19,21 @@ function reverseSeq(n) {
   }
   return array;
 }
+
+//We will consider a, e, i, o, u as vowels for this Kata (but not y).
+function getCount(str) {
+  let vowelsCount = 0;
+  let strSplit = str.split("");
+  for (let i = strSplit.length; i >= 0; --i) {
+    if (
+      strSplit[i] === "a" ||
+      strSplit[i] === "e" ||
+      strSplit[i] === "i" ||
+      strSplit[i] === "o" ||
+      strSplit[i] === "u"
+    ) {
+      vowelsCount++;
+    }
+  }
+  return vowelsCount;
+}
