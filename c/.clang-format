@@ -13,4 +13,3 @@ SortIncludes: false
 SpaceAfterCStyleCast: true
 SpaceBeforeAssignmentOperators: false
 SpaceBeforeParens: Never
-
