@@ -3,26 +3,27 @@
 #include <stdlib.h>
 #include <string.h>
 
-char* breakCamel(char* string){
+char* breakCamel(char* string)
+{
     int len = strlen(string);
-    char* newString = (char *)malloc((len*2) * sizeof(char)); 
-    for(int i=0, j=0; i<len*2; i++ , j++) {
-        if(string[j] >= 'A' && string[j] <= 'Z') {
+    char* newString = (char*)malloc((len * 2) * sizeof(char));
+    for (int i = 0, j = 0; i < len * 2; i++, j++) {
+        if (string[j] >= 'A' && string[j] <= 'Z') {
             newString[i] = ' ';
             i++;
             newString[i] = string[j];
         }
         else {
-            newString[i] = string[j];    
+            newString[i] = string[j];
         }
-    }   
+    }
     return newString;
 }
 
+int main(int argc, char** argv)
+{
 
-int main(int argc, char **argv){
-
-    char *str = "hgfhgCcagadeBbegbafbHfcBgdebbbAdfbddbga";
+    char* str = "hgfhgCcagadeBbegbafbHfcBgdebbbAdfbddbga";
     printf("%s\n", str);
     printf("%s\n", breakCamel(str));
 

@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-size_t countBits(unsigned value){
-    int rem=0;
-    int num_of_1=0;
-    while(value !=0){
+size_t countBits(unsigned value)
+{
+    int rem = 0;
+    int num_of_1 = 0;
+    while (value != 0) {
         rem = value % 2;
         if (rem)
             num_of_1++;
@@ -14,7 +15,8 @@ size_t countBits(unsigned value){
     return num_of_1;
 }
 
-int main(int argc, char **argv){
+int main(int argc, char **argv)
+{
 
     int input = 1234;
     printf("%ld\n", countBits(input));
