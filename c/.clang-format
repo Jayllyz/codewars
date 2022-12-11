@@ -1,15 +1,10 @@
 # Format Style Options - Created with Clang Power Tools
 ---
 BasedOnStyle: WebKit
-AlignConsecutiveAssignments: Consecutive
-BreakBeforeBraces: Attach
-ColumnLimit: 130
+BreakBeforeBraces: Stroustrup
+ColumnLimit: 170
 Cpp11BracedListStyle: true
 DerivePointerAlignment: true
-MaxEmptyLinesToKeep: 2
-PointerAlignment: Middle
 ReflowComments: false
-SortIncludes: false
-SpaceAfterCStyleCast: true
-SpaceBeforeAssignmentOperators: false
-SpaceBeforeParens: Never
+SortIncludes: True
+AllowShortFunctionsOnASingleLine: Empty
