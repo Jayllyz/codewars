@@ -10,10 +10,7 @@ void twoSum(unsigned count, const int numbers[count], int target, unsigned *inde
     int temp = 0;
     for (unsigned i = 0; i < count; ++i) {
         for (unsigned j = 0; j < count; ++j) {
-            if (i != j)
-                temp = numbers[i] + numbers[j];
-
-            if ( i!=j && temp == target ) {
+            if (i != j && temp == target) {
                 temp = numbers[i] + numbers[j];
                 *index1 = i;
                 *index2 = j;
