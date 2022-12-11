@@ -5,12 +5,10 @@ double mean_square_error(size_t n, const int a[n], const int b[n])
 {
     int *temp = malloc(n * sizeof(int));
     double value = 0;
-    for (size_t i = 0; i < n; ++i)
+    for (size_t i = 0; i < n; ++i) {
         temp[i] = (a[i] - b[i]) * (a[i] - b[i]);
-
-    for (size_t j = 0; j < n; ++j)
-        value += temp[j];
-
+        value += temp[i];
+    }
     free(temp);
     return value / n;
 }
