@@ -5,7 +5,7 @@
 
 #define ROWS 5
 
-int *snail(size_t *outsz, int (*mx)[5], size_t rows, size_t cols)
+int *snail(size_t *outsz, int (*mx)[ROWS], size_t rows, size_t cols)
 {
     size_t vertical = 0, horizontal = 0;
     size_t size = rows * cols;
