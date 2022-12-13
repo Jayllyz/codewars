@@ -1,3 +1,4 @@
+//https://www.codewars.com/kata/54da5a58ea159efa38000836
 #include <stdio.h>
 
 int find_odd(size_t length, const int array[length])
@@ -11,7 +12,7 @@ int find_odd(size_t length, const int array[length])
         if (count % 2 == 1)
             return array[i];
     }
-    return -1;
+    return -1; //not important since the array will always have an odd number
 }
 
 int main(int argc, char **argv)
