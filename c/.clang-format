@@ -7,4 +7,3 @@ DerivePointerAlignment: true
 ReflowComments: false
 SortIncludes: true
 AllowShortFunctionsOnASingleLine: Empty
-
