@@ -1,5 +1,5 @@
 //https://www.codewars.com/kata/554ca54ffa7d91b236000023
-// Hasmap would be better i guess but i want to learn basics first
+// Hashmap would be better i guess but i want to learn basics first
 
 fn delete_nth(lst: &[u8], n: usize) -> Vec<u8> {
     let mut finalVec = Vec::new();
