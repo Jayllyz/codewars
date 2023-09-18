@@ -6,12 +6,9 @@
 bool is_square(int n)
 {
 
-    int intValue;
-    float floatValue;
-    float Value = sqrt((double)n);
-    int Value = floatValue;
+    float floatValue = sqrt((double)n);
 
-    return intValue == floatValue ? true : false;
+    return n == floatValue ? true : false;
 }
 
 int main(int argc, char **argv)
