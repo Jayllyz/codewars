@@ -11,10 +11,10 @@ bool alphanumeric(const char *strin)
     for (unsigned int i = 0; i < strlen(strin); ++i) {
         char c = strin[i];
 
-        if (c == ' ' || c == '_') 
+        if (c == ' ' || c == '_')
             return false;
-        
-        if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))) 
+
+        if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')))
             return false;
     }
     return true;
